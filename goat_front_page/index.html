@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Greatest of the Best</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bootstrap-select.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+  </head>
+
+  <body ng-app="nodejsApp">
+    <div class="header">
+      <div class="container-fluid" style="height: 600px; background: url(images/background.jpg)">
+        <div class="row">
+          <div class="col-md-3">
+            <h2><font color="#FFFFFF">goat</font></h2>
+          </div>
+          <div class="col-md-1 col-md-offset-6">
+            <h2><a href="#/home"><button type="button" class="btn btn-info btn-block">成为房东</button></a></h2>
+          </div>
+          <div class="col-md-1">
+            <h2><a href="#/register"><button type="button" class="btn btn-info btn-block">注册</button></a></h2>
+          </div>
+          <div class="col-md-1">
+            <h2><a href="#/login"><button type="button" class="btn btn-info btn-block">登录</button></a></h2>
+          </div>
+        </div>
+        <div class="row" style="height: 450px"></div>
+        <div class="row">
+          <div class="navbar-header col-md-offset-3">
+            <p></p>
+          </div>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <select class="selectpicker" data-style="btn-primary" multiple data-live-search="true" data-live-search-placeholder="Search" data-actions-box="true">
+                <optgroup label="filter1">
+                  <option>option1</option>
+                  <option>option2</option>
+                  <option>option3</option>
+                  <option>option4</option>
+                </optgroup>
+                <optgroup label="filter2">
+                  <option>option1</option>
+                  <option>option2</option>
+                  <option>option3</option>
+                  <option>option4</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="selectpicker" data-style="btn-success" multiple data-live-search="true" data-live-search-placeholder="Search" data-actions-box="true">
+                <optgroup label="filter1">
+                  <option>option1</option>
+                  <option>option2</option>
+                  <option>option3</option>
+                  <option>option4</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="selectpicker" data-style="btn-danger" multiple data-live-search="true" data-live-search-placeholder="Search" data-actions-box="true">
+                <optgroup label="filter1">
+                  <option>option1</option>
+                  <option>option2</option>
+                  <option>option3</option>
+                  <option>option4</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+    <div ng-view=""></div>
+    </div>
+
+    <div class="footer">
+      <div class="container-fluid">
+        <p><span class="glyphicon glyphicon-heart"></span> CopyRight@GOAT Greatest of the Best</p>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+
+</body>
+
+</html>
